@@ -1,0 +1,1 @@
+This is a text for testing fold program. It is a long-length text that can be divided in lines some like editor's text wrapping. It do not have newlines (\n). But the program inserts some newlines in some points of text.

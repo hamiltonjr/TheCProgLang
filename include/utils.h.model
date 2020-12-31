@@ -1,0 +1,17 @@
+#ifndef UTILS_H
+#define UTILS_H
+#include <ctype.h>
+#include <limits.h>
+#include <malloc.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+
+#define MAX
+
+// prototype(s)
+
+
+#endif // UTILS_H
+

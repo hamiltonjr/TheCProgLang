@@ -1,0 +1,15 @@
+pineapple
+APPLE
+orange
+LEMON
+pear
+coconut
+banana
+GRAPE
+tangerine
+mellon
+watermellon
+guava
+MANGO
+avocado
+
