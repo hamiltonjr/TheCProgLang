@@ -3,26 +3,27 @@
 
 int main()
 {
-    const double lower = -20.0;
-    const double upper = 150.0;
-    const double step = 10.0;
-    double celsius, fahr;
+    const double lower = 0.0;
+    const double upper = 300.0;
+    const double step = 20.0;
+    double fahr, celsius;
 
     // header
-    celsius = lower;
-    printf("\n\tCELSIUS  FAHR\n");
-    printf("\t-------------\n");
+    fahr = lower;
+    printf("\n\tFAHR CELSIUS\n");
+    printf("\t------------\n");
 
     // program loop
-    while (celsius <= upper)
+    while (fahr <= upper)
     {
-        fahr = (9.0/5.0) * celsius + 32.0;
-        printf("\t%5.1lf %7.1lf\n", celsius, fahr);
-        celsius += step;
+        celsius = (5.0/9.0) * (fahr - 32.0);
+        printf("\t%4.0lf %6.1lf\n", fahr, celsius);
+        fahr += step;
     }
 
     // footer
-    printf("\t-------------\n\n");
+    printf("\t------------\n\n");
 
     return EXIT_SUCCESS;
 }
+
