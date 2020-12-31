@@ -5,15 +5,8 @@
 #include <stdlib.h>
 #define MAXLINE 1000
 
-#undef getline
-#define getline GETLINE
-
-#undef copy
-#define copy COPY
-
 // protptypes
-int GETLINE(char*, int);
-void COPY(char*, char*);
+int getline(char*, int);
+void copy(char*, char*);
 
 #endif // LONGEST_H
-
