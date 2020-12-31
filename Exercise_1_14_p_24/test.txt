@@ -1,3 +1,0 @@
-The code hasn't bugs. This test file maybe has bugs.
-I am a bug. 
-
