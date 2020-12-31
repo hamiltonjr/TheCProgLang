@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define IN     1
 #define OUT    0
 
@@ -13,7 +14,6 @@
 
 int main()
 {
-
     unsigned state = OUT; 
     int c;
 
@@ -34,7 +34,5 @@ int main()
         putchar(c);
     }
 
-    return 0;
-
+    return EXIT_SUCCESS;
 }
-
