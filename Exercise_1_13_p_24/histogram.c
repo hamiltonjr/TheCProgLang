@@ -7,35 +7,24 @@
 #define MAXLEN   60
 #define MAXSIZE 100
 
-/*
- */
+// This code implements a histogram of word lengths 
+// in input. 
 
+// word buffer
 char word[MAXLEN];
 
-void hist(int size)
-{
-    if (size > MAXSIZE)
-    {
-        fprintf(stderr, "ERROR: histogram size exceeds max lenght\n");
-        exit(EXIT_FAILURE);
-    }
-
-    printf("[%02d] ", size);
-    for (register size_t i = 0; i < size; ++i)
-    {
-        putchar('*');
-    }
-}
+// prototype
+void hist(int);
 
 int main()
 {
-
     unsigned state = OUT; 
     int counter[MAXLEN] = {0};
     size_t i = 1;
     size_t max = 0;
     int c;
 
+    // program loop
     while ((c = getchar()) != EOF)
     {
         // no points
@@ -68,6 +57,7 @@ int main()
         }   
     }
 
+    // draw the histogram
     printf("\n");
     for (i = 1; i <= max; ++i)
     {
@@ -75,9 +65,23 @@ int main()
         hist(counter[i]);
         printf("\n");
     }
-    
     printf("\n");
-    return (EXIT_SUCCESS);
 
+    return (EXIT_SUCCESS);
 }
 
+// this code draws the histogram using asterisks
+void hist(int size)
+{
+    if (size > MAXSIZE)
+    {
+        fprintf(stderr, "ERROR: histogram size exceeds max lenght\n");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("[%02d] ", size);
+    for (register size_t i = 0; i < size; ++i)
+    {
+        putchar('*');
+    }
+}
