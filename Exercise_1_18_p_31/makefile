@@ -1,12 +1,5 @@
-obj = main.o getline.o
-cfg = -std=c11 -Wall -pedantic
-
-sqz: $(obj)
-	gcc $(cfg) -o sqz $(obj)
-
-$(obj): trailing.h
-	gcc $(cfg) -c $*.c
+sqz:
+	gcc -std=c11 -Wall -pedantic -o sqz main.c ../lib/utils.a
 
 clean:
 	rm -rf sqz $(obj)
-
