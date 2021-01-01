@@ -1,5 +1,8 @@
-#include "reverse.h"
+#include <stdio.h>
+#include <string.h>
+#define MAXLINE 1024
 
+// this function reverses a string
 void reverse(char *s)
 {
     size_t len = strlen(s);
@@ -13,6 +16,4 @@ void reverse(char *s)
 
     r[i] = '\0';
     strcpy(s, r);
-
 }
-

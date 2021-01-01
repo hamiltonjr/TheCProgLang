@@ -1,11 +1,12 @@
 #include "reverse.h"
 
+// getline() used here is of utils.a library
+
 int main()
 {
-
     char line[MAXLINE];
 
-    // catching lines 
+    // catching lines
     while (getline(line, MAXLINE))
     {
         reverse(line);
@@ -14,5 +15,4 @@ int main()
     printf("\n\n");
 
     return EXIT_SUCCESS;
-
 }

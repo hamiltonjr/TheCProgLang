@@ -1,12 +1,5 @@
-obj = main.o getline.o reverse.o
-cfg = -std=c11 -Wall -pedantic
-
-reverse: $(obj)
-	gcc $(cfg) -o reverse $(obj)
-
-$(obj): reverse.h
-	gcc $(cfg) -c $*.c
+revlines: 
+	gcc -std=c11 -Wall -pedantic -o revlines main.c ../lib/utils.a
 
 clean:
-	rm -rf reverse $(obj)
-
+	rm -rf revlines
