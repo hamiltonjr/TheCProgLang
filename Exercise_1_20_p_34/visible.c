@@ -1,8 +1,8 @@
 #include "detab.h" 
 
+// this function makes visible sme blanks
 void visible(char* s)
 {
-
     register size_t i = 0, j = 0;
     char e[MAXLINE];
 
@@ -11,16 +11,13 @@ void visible(char* s)
         if (s[i] == '\t')
         {
             e[j++] = '\\';
-            e[j++] = '\\';
             e[j++] = 't';
-        } else if (s[i] == '\b')
+        } else if (s[i] == ' ')
         {
-            e[j++] = '\\';
             e[j++] = '\\';
             e[j++] = 'b';
         } else if (s[i] == '\\')
         {
-            e[j++] = '\\';
             e[j++] = '\\';
         } else
         {
@@ -31,6 +28,4 @@ void visible(char* s)
     }
     e[j] = '\0';
     strcpy(s, e);
-
 }
-
