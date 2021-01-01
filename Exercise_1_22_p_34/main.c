@@ -2,7 +2,6 @@
 
 int main()
 {
-
     char line[MAXLINE];
     int len = 0;
 
@@ -20,6 +19,4 @@ int main()
     printf("\n");
 
     return EXIT_SUCCESS;
-
 }
-

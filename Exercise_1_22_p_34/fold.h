@@ -5,14 +5,12 @@
 #include <stdbool.h>
 #include <string.h>
 #define MAXLINE 1000
-#define LENGTH 60
+#define LENGTH 40
+#define LONGEST 50
 #define TAB     8
-#undef getline
-#define getline GETLINE
 
 // prototypes
 void fold(char*);
-int GETLINE(char*, int);
+int getline(char*, int);
 
 #endif // FOLD_H
-
