@@ -1,9 +1,7 @@
 #include "detab.h" 
 
-
 void detab(char *s)
 {
-
     char e[MAXLINE];
     int i = 0, j = 0;
 
@@ -25,6 +23,4 @@ void detab(char *s)
     }
     *(e + j) = *(s + i);
     strcpy(s, e);
-
 }
-

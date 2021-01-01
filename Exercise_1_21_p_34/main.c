@@ -1,4 +1,4 @@
-#include "detab.h"
+#include "entab.h"
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
         printf("%s", vline);
         
         printf("After...\n");
-        detab(line);
+        entab(line);
         visible(line);
         printf("%s\n", line);
     }

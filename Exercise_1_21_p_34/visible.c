@@ -1,4 +1,4 @@
-#include "detab.h" 
+#include "entab.h" 
 
 void visible(char* s)
 {

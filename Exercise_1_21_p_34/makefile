@@ -1,12 +1,12 @@
-obj = main.o getline.o visible.o detab.o
+obj = main.o visible.o entab.o
 cfg = -std=c11 -Wall -pedantic
+lib = ../lib/utils.a
 
-detab: $(obj)
-	gcc $(cfg) -o detab $(obj)
+entab: $(obj)
+	gcc $(cfg) -o entab $(obj) $(lib)
 
-$(obj): detab.h
+$(obj): entab.h
 	gcc $(cfg) -c $*.c
 
 clean:
-	rm -rf detab $(obj)
-
+	rm -rf entab $(obj)
