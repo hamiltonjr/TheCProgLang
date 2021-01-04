@@ -14,18 +14,13 @@
  */
 int main()
 {
-
-    int x = 7;
-
-    printf("\n\tx = %d           -> ", x);
+    int x = 0b10010101;
+ 
+    printf("\n\tThis code counts bits of a number:\n\n");
+    printf("\tdec x = %d\n", x);
+    printf("\tbin x = ");
     binary(x);
-    printf("\n\tx - 1 = %d       -> ", x - 1);
-    binary(x - 1);
-    printf("\n\tx & (x - 1) = %d -> ", x & (x - 1));
-    binary(x & (x - 1));
+    printf("\n\tcounter = %d\n\n", bitcount(x));
 
-    printf("\n\n");
     return EXIT_SUCCESS;
-
 }
-

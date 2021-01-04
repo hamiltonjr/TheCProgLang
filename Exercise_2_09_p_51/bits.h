@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 // prototypes
+size_t bitcount(unsigned);
 void binary(int);
 
 #endif // BITS_H
-
