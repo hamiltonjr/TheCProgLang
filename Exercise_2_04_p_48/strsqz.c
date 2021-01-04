@@ -9,7 +9,6 @@
  */
 void strsqz(char *s1, char *s2)
 {
-
     size_t len = strlen(s2);
     register size_t i;
 
@@ -18,7 +17,5 @@ void strsqz(char *s1, char *s2)
     for (i = 0; i < len; ++i)
     {
         squeeze(s1, *(s2 + i));
-    }
-    
+    }   
 }
-

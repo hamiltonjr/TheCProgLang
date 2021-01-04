@@ -13,4 +13,3 @@ void squeeze(char*, int);
 void strsqz(char*, char*);
 
 #endif // SQUEEZE_H
-

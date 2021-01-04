@@ -8,7 +8,6 @@
  */
 void squeeze(char *s, int c)
 {
-
     register size_t i, j;
 
     for (i = j = 0; *(s + i); ++i)
@@ -19,6 +18,4 @@ void squeeze(char *s, int c)
        }
     }
     *(s + j) = '\0';
-
 }
-
