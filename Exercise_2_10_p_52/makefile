@@ -9,4 +9,3 @@ $(obj): lower.h
 
 clean:
 	rm -rf lower $(obj)
-

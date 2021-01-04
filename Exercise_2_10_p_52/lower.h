@@ -1,8 +1,10 @@
 #ifndef LOWER_H
 #define LOWER_H
+
 /*
  * This header organizes the Lower project.
  */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -16,4 +18,3 @@ int LOWER(int);
 void TOLOWER(char*);
 
 #endif // LOWER_H
-
