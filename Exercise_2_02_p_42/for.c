@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define LIMIT 1035
+#define LIMIT 1024
 
 int main()
 {
@@ -8,6 +8,7 @@ int main()
     register size_t i;
     int c;
 
+    printf("\n");
     for (i = 0; i < LIMIT - 1; ++i)
     {
         if ((c = getchar()) == '\n')
@@ -17,8 +18,8 @@ int main()
             break;
 
         putchar(c);
-    } 
-    printf("\n");
+    }
+    printf("\n\n");
 
 
     return EXIT_SUCCESS;
