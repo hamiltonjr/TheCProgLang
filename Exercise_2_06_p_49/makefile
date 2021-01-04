@@ -9,4 +9,3 @@ $(obj): bits.h
 
 clean:
 	rm -rf bits $(obj)
-
