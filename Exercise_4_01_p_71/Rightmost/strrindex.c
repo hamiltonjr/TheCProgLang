@@ -1,4 +1,4 @@
-#include "pattern.h"
+#include "../pattern.h"
 
 /*
  * This function return sthe rightmost occurrence of a

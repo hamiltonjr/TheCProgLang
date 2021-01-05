@@ -1,12 +1,5 @@
-obj = main.o getline.o strrindex.o
-cfg = -std=c11 -Wall -pedantic
-
-xgrep: $(obj)
-	gcc $(cfg) -o xgrep $(obj)
-
-$(obj): pattern.h
-	gcc $(cfg) -c $*.c
+xgrep:
+	gcc -std=c11 -Wall -pedantic -o xgrep main.c strrindex.c  ../../lib/utils.a
 
 clean:
-	rm -rf xgrep pattern $(obj)
-
+	rm -rf xgrep
