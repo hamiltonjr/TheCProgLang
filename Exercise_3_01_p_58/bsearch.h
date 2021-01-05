@@ -11,6 +11,7 @@
 
 // prototype
 int BSEARCH(int, int*, int);
+int fast_bsearch(int, int*, int);
 void print(int*, int);
 
 #endif // BSEARCH_H

@@ -1,4 +1,4 @@
-obj = main.o print.o bsearch.o
+obj = main.o print.o bsearch.o fast_bsearch.o
 cfg = -std=c11 -Wall -pedantic
 
 bs: $(obj)
@@ -9,4 +9,3 @@ $(obj): bsearch.h
 
 clean:
 	rm -rf bs $(obj)
-

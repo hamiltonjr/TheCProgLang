@@ -2,33 +2,29 @@
 
 /*
  * This function is the implementation fo binary
- * search. The array must be sorted.
- *
- * input..: element x, arrayv and number of elements 
- * of array (the size).
- * output.: position of x in v or -1 if the element 
- * is not in v.
+ * search. The array must be sorted. 
  */
 int bsearch(int x, int *v, int n)
 {
     
     int low = 0, high = n - 1;
-    int mid = (low + high) / 2;
+    int mid;
 
-    while (low <= high && x != v[mid])
+    while (low <= high)
     {
+        mid = (low + high) / 2;
+
         if (x < v[mid])
         {
             high = mid - 1;
-        } else
+        } else if (x > v[mid])
         {
             low = mid + 1;
-        }
-        
-        mid = (low + high) / 2;
+        } else
+        {
+            return mid;
+        }        
     }
 
-    return (x == v[mid]) ? mid : -1;
-
+    return -1;
 }
-
