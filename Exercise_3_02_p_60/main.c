@@ -4,9 +4,9 @@
 /*
  * Testing escape() and unescape().
  */
+
 int main()
 {
-
     char t[MAXLEN], s[MAXLEN], r[MAXLEN];
     sprintf(t, "%s\t%s\t%s\b\n", "a", "string", "test");
 
@@ -17,6 +17,4 @@ int main()
     printf("\tAfter unescape()..: %s\n", r);
 
     return EXIT_SUCCESS;
-
 }
-

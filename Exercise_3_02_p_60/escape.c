@@ -7,9 +7,9 @@
  * input..: a string t with text to be converted.
  * output.: a string with text converted.
  */
+
 void escape(char *s, char *t)
 {
-
     for ( ; *t != '\0'; t++)
     {
         switch(*t)
@@ -31,7 +31,6 @@ void escape(char *s, char *t)
                 break;
         }
     }
+
     *s = '\0';
-
 }
-
