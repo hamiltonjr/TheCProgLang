@@ -14,9 +14,9 @@
  * input..: a string with sequence representation.
  * output.: a string with resulting sequence.
  */
+
 void expand(char *s1, char *s2)
 {
-
     enum status {
         NOPER,   // no operation
         BNUMR,   // begin numeric sequence
@@ -33,27 +33,32 @@ void expand(char *s1, char *s2)
     
     for ( ; *s2; s2++)
     {
+        // begins alphabetic expanded sequence
         if (isalpha(*s2) && st == NOPER)
         {
             st = BALPH;
             begin = BALPH;
             b = *s2;
         } else 
+        // begins nemeric expanded sequence
         if (isdigit(*s2) && st == NOPER)
         {
             st = BNUMR;
             begin = BNUMR;
             b = *s2;
         } else
+        // hiphen in the right place
         if (*s2 == '-' && (st == BNUMR || st == BALPH))
         {
             st = HIFEN;
         } else
+        // end of alphavetic sequence
         if (isalpha(*s2) && st == HIFEN && begin == BALPH)
         {
             st = EALPH;
             e = *s2;
         } else
+        // end of numeric sequence
         if (isdigit(*s2) && st == HIFEN && begin == BNUMR)
         {
             st = ENUMR;
@@ -92,6 +97,4 @@ void expand(char *s1, char *s2)
         printf("ERROR: something out of place!\n");
         exit(EXIT_FAILURE);
     }
-
 }
-
