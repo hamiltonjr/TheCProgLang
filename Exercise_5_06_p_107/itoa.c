@@ -7,7 +7,6 @@
 
 void itoa(int n, char *s)
 {
-
     int sign;
 
     if ((sign = n) < 0)
@@ -29,6 +28,4 @@ void itoa(int n, char *s)
 
     *s = '\0';
     reverse(s);
-
 }
-

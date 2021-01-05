@@ -26,4 +26,3 @@ int my_atoi(char*);
 void my_itoa(int, char*);
 
 #endif // UTILS_H
-

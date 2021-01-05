@@ -3,7 +3,6 @@
 
 int main()
 {
-
     char longest[MAXLINE];
     char line[MAXLINE];
     int len, max = 0;
@@ -41,6 +40,4 @@ int main()
             word, name, strindex(name, word));
 
     return EXIT_SUCCESS;
-
 }
-

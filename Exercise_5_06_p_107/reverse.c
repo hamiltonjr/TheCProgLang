@@ -1,5 +1,5 @@
 #include "utils.h"
-#define MAXLINE 1000
+#define MAXLINE 1024
 #define swap(x, y) { char aux = x; x = y; y = aux; }
 
 void reverse(char *s)
@@ -12,6 +12,4 @@ void reverse(char *s)
     // reverse
     for (--r; s < r; ++s, --r)
         swap(*s, *r);
-
 }
-

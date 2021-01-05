@@ -3,9 +3,9 @@
 /*
  * This is a function that get a line text from stdin.
  */
+
 int getline(char *s, int lim)
 {
-
     char *p;
     int c;
 
@@ -23,4 +23,3 @@ int getline(char *s, int lim)
  
     return (int)(p - s);
 }
-

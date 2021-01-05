@@ -1,13 +1,5 @@
-OBJECTS  = main.o atoi.o itoa.o reverse.o getline.o copy.o strindex.o
-CFLAGS   = -std=c11 -Wall -pedantic
-COMPILER = gcc
-
-test: $(OBJECTS)
-	$(COMPILER) $(CFLAGS) -o test $(OBJECTS)
-
-$(OBJECTS): utils.h
-	$(COMPILER) $(CFLAGS) -c $*.c
+test:
+	gcc -std=c11 -Wall -pedantic -o test main.c ./lib/strutils.a
 
 clean:
-	rm -rf print $(OBJECTS)
-
+	rm -rf test

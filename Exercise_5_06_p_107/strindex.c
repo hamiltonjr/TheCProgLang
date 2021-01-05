@@ -3,7 +3,6 @@
 
 size_t strindex(char *s, char *t)
 {
-
     char *i, *j, *k;
 
     for (i = s; *i != '\0'; i++)
@@ -16,6 +15,4 @@ size_t strindex(char *s, char *t)
     }
 
     return -1;
-
 }
-

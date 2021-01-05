@@ -2,7 +2,6 @@
 
 int atoi(char *s)
 {
-
     int n, sign;
 
     // skip spaces
@@ -22,6 +21,4 @@ int atoi(char *s)
     }
 
     return sign * n;
-
 }
-
