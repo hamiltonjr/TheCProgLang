@@ -9,4 +9,3 @@
 void STRCAT(char*, const char*);
 
 #endif // STRUTIL_H
-

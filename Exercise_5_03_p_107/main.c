@@ -3,7 +3,6 @@
 
 int main()
 {
-
     char s[MAXSTR] = "Hello ";
     char t[MAXSTR] = "world!";
 
@@ -18,6 +17,4 @@ int main()
     printf("\tt = %s\n\n", t);
 
     return EXIT_SUCCESS;
-
 }
-

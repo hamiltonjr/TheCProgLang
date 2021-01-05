@@ -1,12 +1,5 @@
-obj = main.o strcat.o
-cfg = -std=c11 -Wall -pedantic
-
-concat: $(obj)
-	gcc $(cfg) -o concat $(obj)
-
-$(obj): strutil.h
-	gcc $(cfg) -c $*.c
+concat:
+	gcc -std=c11 -Wall -pedantic -o concat main.c strcat.c
 
 clean:
-	rm -rf concat $(obj)
-
+	rm -rf concat
