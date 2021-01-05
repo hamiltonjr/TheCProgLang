@@ -1,4 +1,4 @@
-#include "pattern.h"
+#include "../pattern.h"
 
 /*
  * This function return the first occurrence of a
@@ -7,9 +7,9 @@
  * input..: a string (line) and a pattern.
  * output.: index of occurrence.
  */
+
 int strindex(char *s, char *t)
 {
-
     register size_t i, j, k;
 
     // run string
@@ -17,8 +17,8 @@ int strindex(char *s, char *t)
     {
         // search pattern
         for (j = i, k = 0; 
-                *(t + k) != '\0' && *(s + j) == *(t + k);
-                ++j, ++k);
+            *(t + k) != '\0' && *(s + j) == *(t + k);
+            ++j, ++k);
 
         // if pattern
         if (k > 0 && *(t + k) == '\0')
@@ -28,6 +28,4 @@ int strindex(char *s, char *t)
     }
 
     return -1;
-
 }
-

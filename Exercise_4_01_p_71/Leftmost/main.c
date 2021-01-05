@@ -1,4 +1,4 @@
-#include "pattern.h"
+#include "../pattern.h"
 
 /*
  * Testing strrindex() function.
