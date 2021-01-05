@@ -8,9 +8,9 @@
  * its content.
  * OBS: recursive version.
  */
+
 void reverse(char *s)
-{
-    
+{    
     size_t len = strlen(s);
 
     if (len < 2) 
@@ -23,7 +23,4 @@ void reverse(char *s)
     
     s[len - 1] = s[0];
     s[0] = t;
-
 }
-
-

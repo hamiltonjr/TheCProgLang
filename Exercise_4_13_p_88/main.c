@@ -2,7 +2,6 @@
 
 int main()
 {
-
     char w1[10] = "PLAN";
     char w2[10] = "ARARA";
 
@@ -15,6 +14,4 @@ int main()
     printf("\tWord reversed.: %s\n\n", w2);
 
     return EXIT_SUCCESS;
-
 }
-

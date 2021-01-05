@@ -8,4 +8,3 @@
 void reverse(char*);
 
 #endif // REVERSE_H
-
