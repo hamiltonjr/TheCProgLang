@@ -7,12 +7,12 @@
  * it, it is just to take:
  *    gcc -o test main.c && ./test
  */
+
 // macro
 #define SWAP(t, x, y) {  t aux = x; x = y; y = aux; }
 
 int main()
 {
-
     double m = 3.14, n = 1.41;
     int a = 3, b = 4;
 
@@ -27,6 +27,4 @@ int main()
     printf("\ta = %d b = %d\n\n", a, b);
 
     return EXIT_SUCCESS;
-
 }
-
