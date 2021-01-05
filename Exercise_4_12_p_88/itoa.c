@@ -2,7 +2,6 @@
 
 void itoa_(char *s, int n)
 {
-
     static size_t i = 0;
     int r;
 
@@ -14,6 +13,4 @@ void itoa_(char *s, int n)
     
     s[i] = r + '0';
     s[++i] = '\0';
-
 }
-    

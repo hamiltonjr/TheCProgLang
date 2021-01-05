@@ -1,12 +1,5 @@
-obj = main.o itoa.o
-cfg = -std=c11 -Wall -pedantic
-
-itoa: $(obj)
-	gcc $(cfg) -o itoa $(obj)
-
-$(obj): itoa.h
-	gcc $(cfg) -c $*.c
+itoa:
+	gcc -std=c11 -Wall -pedantic -o itoa main.c itoa.c
 
 clean:
-	rm -rf itoa $(obj)
-
+	rm -rf itoa

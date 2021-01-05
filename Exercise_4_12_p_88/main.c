@@ -2,7 +2,6 @@
 
 int main()
 {
-
     char s[5];
     int n = 256;
 
@@ -12,6 +11,4 @@ int main()
     printf("\tPrinting s (string)...: %s\n\n", s);
 
     return EXIT_SUCCESS;
-
 }
-
