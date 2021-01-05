@@ -1,13 +1,9 @@
-#include "calc.h" 
-#define MAXVAL 100
+#include "calc.h"
+#include "stack.h"
 
-double val[MAXVAL];
-int sp = 0;
-
-
+// 
 void push(double f)
 {
-
     if (sp < MAXVAL)
     {
         val[sp++] = f;
@@ -16,13 +12,11 @@ void push(double f)
         printf("ERROR: stack full!\n");
         exit(EXIT_FAILURE);
     }
-
 }
 
-
+// 
 double pop(void)
 {
-
     if (sp > 0)
     {
         return val[--sp];
@@ -31,13 +25,11 @@ double pop(void)
         printf("ERROR: stack empty!\n");
         exit(EXIT_FAILURE);
     }
-
 }
 
-
+// 
 void clear(void)
 {
-
     if (!empty())
     {
         sp = 0;
@@ -46,29 +38,23 @@ void clear(void)
         printf("ERROR: stack empty!\n");
         exit(EXIT_FAILURE);
     }
-
 }
 
-
+// 
 bool empty(void)
 {
-
     return (sp == 0);
-
 }
 
-
+// 
 bool full(void)
 {
-
     return (sp == MAXVAL - 1);
-
 }
 
-
-double top()
+// 
+double top(void)
 {
-
     if (!empty())
     {
         return val[sp - 1];
@@ -77,13 +63,11 @@ double top()
         printf("ERROR: stack empty!\n");
         exit(EXIT_FAILURE);
     }
-
 }
 
-
+// 
 void show_top(void)
 {
-
     if (!empty())
     {
         printf("%lf", top());
@@ -92,13 +76,11 @@ void show_top(void)
         printf("ERROR: stack empty!\n");
         exit(EXIT_FAILURE);
     }
-
 }
 
-
+// 
 void show_stack(void)
 {
-
     if (!empty())
     {
         for (register size_t i = 0; i < sp; ++i)
@@ -110,13 +92,11 @@ void show_stack(void)
         printf("ERROR: stack empty!\n");
         exit(EXIT_FAILURE);
     }
-
 }
 
-
+// 
 void duplicate(void)
 {
-
     if (full())
     {
         printf("ERROR: stack full!\n");
@@ -130,13 +110,11 @@ void duplicate(void)
     {
         push(top());
     }
-
 }
 
-
-void swap()
+// 
+void swap(void)
 {
-
     if (!empty())
     {
         double first = pop();
@@ -148,6 +126,4 @@ void swap()
         printf("ERROR: stack empty!\n");
         exit(EXIT_FAILURE);
     }
-
 }
-

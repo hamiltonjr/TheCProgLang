@@ -8,9 +8,9 @@ int main()
 
     while ((type = getop(s)) != EOF)
     {
-        printf("%d\n", type);
         switch (type)
         {
+        case NEGATIVE:
         case NUMBER:
             push(atoi(s));
             break;

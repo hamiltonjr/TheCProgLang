@@ -2,13 +2,12 @@
 
 int getop(char s[])
 {
-
     register size_t i = 0;
     int c;
 
     // skip initial spaces
     while ((s[0] = c = getch()) == ' ' || c == '\t');
-    
+
     // non-digits (can be operators, spaces)
     if (!isdigit(c) && c != '.')
     {
@@ -34,7 +33,11 @@ int getop(char s[])
         ungetch(c);
     }
 
-    return NUMBER;
-
+    if (s[0] == NEGATIVE )
+    {
+        return NEGATIVE;
+    } else
+    {
+        return NUMBER;
+    }
 }
-
