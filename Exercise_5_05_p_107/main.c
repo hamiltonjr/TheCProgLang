@@ -3,7 +3,6 @@
 
 int main()
 {
-
     char s[MAXSTR] = "Hello ";
     char t[MAXSTR] = "World Wide Web";
     int n = 5;
@@ -32,6 +31,4 @@ int main()
 
     printf("\n");
     return EXIT_SUCCESS;
-
 }
-

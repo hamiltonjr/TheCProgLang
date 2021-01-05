@@ -9,4 +9,3 @@ $(obj): strutil.h
 
 clean:
 	rm -rf test $(obj)
-

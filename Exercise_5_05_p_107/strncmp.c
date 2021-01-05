@@ -2,7 +2,6 @@
 
 int strncmp(const char *s, const char *t, int n)
 {
-
     for ( ; (*s == *t) && (--n > 0); s++, t++)
     {
         if (!*s)
@@ -10,6 +9,4 @@ int strncmp(const char *s, const char *t, int n)
     }
 
     return *s - *t;
-
 }
-

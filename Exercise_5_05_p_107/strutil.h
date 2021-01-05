@@ -18,4 +18,3 @@ void my_strncpy(char*, const char*, int);
 int my_strncmp(const char*, const char*, int);
 
 #endif // STRUTIL_H
-
