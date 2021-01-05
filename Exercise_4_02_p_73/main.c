@@ -4,9 +4,9 @@
  * Testing atof() function as implementation of a 
  * rudimentary calculator.
  */
+
 int main()
 {
-
     char line[MAXLINE];
     double sum = 0.0;
 
@@ -18,6 +18,4 @@ int main()
     }
 
     return EXIT_SUCCESS;
-
 }
-
