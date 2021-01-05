@@ -8,4 +8,3 @@
 int strend(const char*, const char*);
 
 #endif // STRUTIL_H
-

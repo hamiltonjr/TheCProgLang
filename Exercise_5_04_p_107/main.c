@@ -3,7 +3,6 @@
 
 int main()
 {
-
     char s[MAXSTR] = "Araçatuba-SP";
     char t1[MAXSTR] = "SP";
     char t2[MAXSTR] = "MT";
@@ -16,6 +15,4 @@ int main()
 
 
     return EXIT_SUCCESS;
-
 }
-
