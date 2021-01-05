@@ -3,9 +3,9 @@
 /*
  * Testing itoa() function in a special case.
  */
+
 int main()
 {
-
     char s[20];
 
     // common case (close to special)
@@ -20,8 +20,7 @@ int main()
     itoa(INT_MIN, s);
     printf("\tIt is a string: %s\n\n", s);
 
+    // the end
     printf("\tIt is all right in both cases!\n\n");
     return EXIT_SUCCESS;
-
 }
-

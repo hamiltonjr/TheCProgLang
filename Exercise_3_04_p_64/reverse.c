@@ -7,9 +7,9 @@
  * output.: in the same string, the reverse changes 
  * its content.
  */
+
 void reverse(char *s)
 {
-
     int len = strlen(s) - 1, c;
 
     for (register size_t i = 0, j = len; i < j; i++, j--)
@@ -18,6 +18,4 @@ void reverse(char *s)
         *(s + i) = *(s + j);
         *(s + j) = c;
     }
-
 }
-

@@ -30,22 +30,19 @@
 
 void itoa(int n, char *s)
 {
-
     int i = 0, sign;
     int shift;
 
     if ((sign = n) < 0)
     {
         // other calculation for n = INT_MIN
-        if (n == INT_MIN)
-        {
-            n = -n - 1;
-            shift = 1;
-        } else
-        // all fine for other cases
+        if (n != INT_MIN)
         {
             n = -n;
             shift = 0;
+        } else
+        {    n = -n - 1;
+            shift = 1;
         }
     }
 
@@ -63,6 +60,4 @@ void itoa(int n, char *s)
 
     *(s + i) = '\0';
     reverse(s);
-
 }
-
