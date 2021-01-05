@@ -2,7 +2,6 @@
 
 int getint(int *pn)
 {
-
     int c, sign;
 
     // skip spaces
@@ -41,6 +40,4 @@ int getint(int *pn)
     }
 
     return c;
-
 }
-

@@ -18,6 +18,4 @@ void ungetch(int c)
     {
         buf[bufd++] = c;
     }
-
 }
-

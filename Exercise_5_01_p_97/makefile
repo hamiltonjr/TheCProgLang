@@ -9,4 +9,3 @@ $(obj): gets.h
 
 clean:
 	rm -rf get $(obj)
-

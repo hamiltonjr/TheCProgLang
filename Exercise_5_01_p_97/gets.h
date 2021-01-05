@@ -7,7 +7,6 @@
 // prototype
 int getint(int*);
 int getch(void);
-    void ungetch(int);
+void ungetch(int);
 
 #endif // GETS_H
-

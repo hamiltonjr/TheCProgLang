@@ -2,7 +2,6 @@
 
 int main()
 {
-
     int n;
 
     printf("\n");
@@ -13,6 +12,4 @@ int main()
     printf("\n");
 
     return EXIT_SUCCESS;
-
 }
-
