@@ -8,7 +8,6 @@
  */
 double getfloat(double *pd)
 {
-
     double power;
     int c, sign;
 
@@ -65,6 +64,4 @@ double getfloat(double *pd)
     }
 
     return c;
-
 }
-
