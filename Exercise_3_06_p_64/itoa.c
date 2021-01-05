@@ -7,27 +7,31 @@
  * input..: integer number n to be converted and width w.
  * output.: string representation of n.
  */
+
 void itoa(int n, char *s, int w)
 {
 
     int i = 0, sign;
 
-    // build string representation
+    // manage signal
     if ((sign = n) < 0)
     {
         n = -n;
     }
 
+    // separate in digits under base BASE
     do
     {
         *(s + i++) = n % BASE + '0';
     } while ((n /= BASE) > 0);
 
+    // add signal to number
     if (sign < 0)
     {
         *(s + i++) = '-';
     }
 
+    // close string number representation
     *(s + i) = '\0';
 
     // adjust width
@@ -40,7 +44,6 @@ void itoa(int n, char *s, int w)
         }
     }
 
+    // correct order
     reverse(s);
-
 }
-
