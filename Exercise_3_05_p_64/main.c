@@ -6,7 +6,7 @@
 int main()
 {
 
-    int n = 255;
+    int n = 160;
     char s[10];
 
     printf("\n\tThis is a number..: %d\n", n);

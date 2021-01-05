@@ -19,24 +19,28 @@ void itob(int n, char *s, int b)
     };
     int i = 0, sign;
 
+    // manage signals
     if ((sign = n) < 0)
     {
         n = -n;
     }
 
+    // separate digits
     do
     {
         int r = n % b;
         *(s + i++) = digits[r];
     } while ((n /= b) > 0);
 
+    // add signal to number 
     if (sign < 0)
     {
         *(s + i++) = '-';
     }
 
+    // close string number representation
     *(s + i) = '\0';
+
+    // get number representation in correct order
     reverse(s);
-
 }
-
