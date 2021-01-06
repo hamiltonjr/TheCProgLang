@@ -2,7 +2,6 @@
 
 int getline(char *line, int lim)
 {
-
     register size_t i;
     int c = 0;
 
@@ -19,6 +18,4 @@ int getline(char *line, int lim)
     *(line + i) = '\0';
 
     return i;
-
 }
-
