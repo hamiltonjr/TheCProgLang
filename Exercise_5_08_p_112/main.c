@@ -2,7 +2,6 @@
 
 int main()
 {
-
     int d, m, yd;
 
     // using legal parameters.
@@ -27,6 +26,4 @@ int main()
     // the end
     printf("\n");
     return EXIT_SUCCESS;
-
 }
-

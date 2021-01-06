@@ -1,14 +1,5 @@
-OBJECTS  = main.o dates.o
-CFLAGS   = -std=c11 -Wall -pedantic
-COMPILER = gcc
-SOFTWARE = test 
-
-$(SOFTWARE): $(OBJECTS)
-	$(COMPILER) $(CFLAGS) -o $(SOFTWARE) $(OBJECTS)
-
-$(ONJECTS): utils.h
-	$(COMPILER) $(CFLAGS) -c $*.c
+test:
+	gcc -std=c11 -Wall -pedantic -o test main.c dates.c
 
 clean:
-	rm -rf $(SOFTWARE) $(OBJECTS)
-
+	rm -rf test

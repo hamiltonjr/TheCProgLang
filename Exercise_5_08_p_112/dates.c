@@ -8,14 +8,13 @@ static char daytab[2][13] = {
 // set day of year from month and day
 int day_of_year(int year, int month, int day)
 {
-
     // leap year = 1 non-leap year = 0
     int leap = (year%4 == 0) && ((year%100 != 0) || (year%400 == 0));
     
     // verify month range
     if (month < 1 || month > 12)
     {
-        printf("\n\tERROR: month out of range!\n");
+        printf("\n\tERROR: month out of range!\n\n");
         exit(EXIT_FAILURE);
     }
 
@@ -33,13 +32,11 @@ int day_of_year(int year, int month, int day)
     }
 
     return day;
-
 }
 
 // set month and day from day of year
 void month_day(int year, int yearday, int *month, int *day)
 {
-
     // leap year = 1 non-leap year = 0
     int leap = (year%4 == 0) && ((year%100 != 0) || (year%400 == 0));
     
@@ -49,7 +46,7 @@ void month_day(int year, int yearday, int *month, int *day)
     // verify day range
     if (yearday < 1 || yearday > 365 + leap)
     {
-        printf("\n\tERROR: year day out of range!\n");
+        printf("\n\tERROR: year day out of range!\n\n");
         exit(EXIT_FAILURE);
     }
 
@@ -62,6 +59,4 @@ void month_day(int year, int yearday, int *month, int *day)
     // set month and day
     *month = i;
     *day = yearday;
-
 }
-
