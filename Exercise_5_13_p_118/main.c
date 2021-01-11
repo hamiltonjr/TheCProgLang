@@ -9,7 +9,6 @@
  */
 int main(int argc, char **argv)
 {
-
     // read entire text file
     int nlines = readlines(lineptr, MAXLINES);
 
@@ -51,6 +50,4 @@ int main(int argc, char **argv)
     }
 
     return EXIT_SUCCESS;
-
 }
-

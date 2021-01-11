@@ -19,7 +19,7 @@ void writelines(char**, int);
 char* alloc(int);
 
 #undef getline
-#define getline my_getline
+#define getline getline
 int getline(char*, int);
 
 #undef readlines
@@ -31,4 +31,3 @@ int my_readlines(char**, int);
 int my_atoi(char*);
 
 #endif // UTILS_H
-
