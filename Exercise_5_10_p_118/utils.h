@@ -18,4 +18,3 @@ double pop(void);
 bool empty(void);
 
 #endif // UTILS_H
-

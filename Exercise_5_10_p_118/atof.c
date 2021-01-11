@@ -11,10 +11,10 @@
  */ 
 double atof(char *s)
 {
-
     double val, power;
     register size_t i;
     int sign, psign, expn;
+ 
     // skip spaces
     for (i = 0; isspace(*(s + i)); ++i);
 
@@ -72,6 +72,4 @@ double atof(char *s)
     }
 
     return sign * val / power;
-
 }
-

@@ -1,9 +1,14 @@
 #include "utils.h"
 #define MAXOP 20
 
+/**
+ * Here multiplication cannot be * because it is a wild 
+ * card character  in  bash and command-line arguments.
+ * Then, we use 'x'. 
+ */
+
 int main(int argc, char **argv)
 {
-
     char op[MAXOP];
     double op2;
 
@@ -18,7 +23,7 @@ int main(int argc, char **argv)
             op2 = pop();
             push(pop() - op2);
         } else 
-        if (!strcmp(op, "*"))
+        if (!strcmp(op, "x"))
         {
             push(pop() * pop());
         } else 
@@ -30,7 +35,6 @@ int main(int argc, char **argv)
         {
             push(atof(op));
         }
-
     }
 
     // finished arguments, show stack top
@@ -43,6 +47,4 @@ int main(int argc, char **argv)
     */
 
     return EXIT_SUCCESS;
-
 }
-
