@@ -7,11 +7,11 @@
 void lower(char *s)
 {
     int len = strlen(s);
+    char c;
 
     while (--len >= 0)
     {
-        *s++ = tolower(*s);
+        c = tolower(*s);
+        *s++ = c;
     }
-
 }
-

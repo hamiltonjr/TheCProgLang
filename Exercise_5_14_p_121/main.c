@@ -7,7 +7,6 @@
 
 int main(int argc, char *const *argv)
 {
-
     int nlines, opt;
 
     // initialize booleans 
@@ -43,6 +42,4 @@ int main(int argc, char *const *argv)
         fprintf(stderr, "Input too big to sort!\n\n");
         exit(EXIT_FAILURE);
     }
-
 }
-

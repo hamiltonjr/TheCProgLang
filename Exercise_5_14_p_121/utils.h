@@ -16,8 +16,8 @@ char *lineptr[MAXLINES];
 
 // prototype(s)
 void writelines(char**, int);
-int numcmp(const char*, const char*);
-int compare(const char*, const char*);
+int numcmp(char*, char*);
+int compare(char*, char*);
 char* alloc(int n);
 void afree(char *p);
 void lower(char*);
@@ -42,4 +42,3 @@ int my_getline(char*, int);
 bool numeric, reversed, folded;
 
 #endif // UTILS_H
-

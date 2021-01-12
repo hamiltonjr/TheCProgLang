@@ -10,7 +10,6 @@ static char *allocp = allocbuf;
 // allocate
 char* alloc(int n)
 {
-
     if (allocbuf + ALLOCSIZE - allocp >= n)
     {
         allocp += n;
@@ -19,17 +18,13 @@ char* alloc(int n)
     {
         return 0;
     }
-
 }
 
 // free
 void afree(char *p)
 {
-
     if (p >= allocbuf && p < allocbuf + ALLOCSIZE)
     {
         allocp = p;
     }
-
 }
-

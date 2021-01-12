@@ -6,7 +6,6 @@
  */
 int readlines(char **lineptr, int maxlines)
 {
-
     int len, nlines = 0;
     char *p, line[MAXLEN];
 
@@ -24,6 +23,4 @@ int readlines(char **lineptr, int maxlines)
     }
 
     return nlines;
-
 }
-

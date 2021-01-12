@@ -7,7 +7,6 @@
  */
 void qsort(void **v, int left, int right, int (*comp)(void*, void*))
 {
-
     void swap(void **v, int, int);
     int i, last;
 
@@ -30,7 +29,6 @@ void qsort(void **v, int left, int right, int (*comp)(void*, void*))
     swap(v, left, last);
     qsort(v, left, last - 1, comp);
     qsort(v, last + 1, right, comp);
-
 }
 
 /*
@@ -39,12 +37,9 @@ void qsort(void **v, int left, int right, int (*comp)(void*, void*))
  */
 void swap(void **v, int i, int j)
 {
-
     void *t;
 
     t = v[i];
     v[i] = v[j];
     v[j] = t;
-
 }
-

@@ -1,7 +1,7 @@
 OBJECTS  = main.o alloc.o atof.o getline.o lower.o numcmp.o compare.o qsort.o readlines.o writelines.o
 COMPILER = gcc
 CFLAGS   = -Wall
-SOFTWARE = test 
+SOFTWARE = sort
 
 $(SOFTWARE): $(OBJECTS)
 	$(COMPILER) $(CFLAGS) -o $(SOFTWARE) $(OBJECTS)
@@ -11,4 +11,3 @@ $(OBJECTS): utils.h
 
 clean:
 	rm -rf $(SOFTWARE) $(OBJECTS)
-

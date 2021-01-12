@@ -6,7 +6,6 @@
  */ 
 double atof(const char *s)
 {
-
     double val, power;
     register size_t i;
     int sign, psign, expn;
@@ -67,6 +66,4 @@ double atof(const char *s)
     }
 
     return sign * val / power;
-
 }
-
