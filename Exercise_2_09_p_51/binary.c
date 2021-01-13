@@ -16,4 +16,3 @@ void binary(int n)
     binary(n / 2);
     printf("%d", n % 2);
 }
-
