@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// library function prototype
-double fahr_to_celsius(double);
+#include "../lib/utils.h"
 
 // conversion table using for and inverted order
 int main()
