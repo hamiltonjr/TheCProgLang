@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * This program is a bare version of UNIX wc.
+ */
 int main()
 {
     int nl = 0; // <enter> are counted
