@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// library function prototype
+double fahr_to_celsius(double);
+
 int main()
 {
     const double lower = 0.0;
@@ -16,7 +19,7 @@ int main()
     // program loop
     while (fahr <= upper)
     {
-        celsius = (5.0/9.0) * (fahr - 32.0);
+        celsius = fahr_to_celsius(fahr);
         printf("\t%4.0lf %6.1lf\n", fahr, celsius);
         fahr += step;
     }
@@ -26,4 +29,3 @@ int main()
 
     return EXIT_SUCCESS;
 }
-
