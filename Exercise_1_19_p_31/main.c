@@ -1,7 +1,11 @@
-#include "reverse.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "../lib/utils.h"
+#define MAXLINE 1024
 
-// getline() used here is of utils.a library
-
+/**
+ * getline() used here is of utils.a library.
+ */
 int main()
 {
     char line[MAXLINE];
