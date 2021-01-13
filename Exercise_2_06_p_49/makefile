@@ -1,4 +1,4 @@
-obj = main.o setbits.o binary.o
+obj = main.o getbits.o setbits.o binary.o
 cfg = -std=c11 -Wall
 
 bits: $(obj)
