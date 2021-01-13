@@ -122,5 +122,7 @@ int getline(char*, int);
 void reverse(char*);
 bool split(char*, char*, char*);
 int htoi(char*);
+void squeeze(char*, int);
+void strsqz(char*, char*);
 
 #endif

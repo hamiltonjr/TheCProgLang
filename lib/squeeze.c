@@ -1,4 +1,4 @@
-#include "squeeze.h"
+#include "../lib/utils.h"
 
 /*
  * This function cut a character c of string s.

@@ -1,12 +1,5 @@
-obj = main.o squeeze.o strsqz.o
-cfg = -std=c11 -Wall -pedantic
-
-sqz: $(obj)
-	gcc $(cfg) -o sqz $(obj)
-
-$(obj): squeeze.h
-	gcc $(cfg) -c $*.c
+sqzw:
+	gcc -std=c11 -Wall -pedantic -o sqzw main.c ../lib/utils.a
 
 clean:
-	rm -rf sqz $(obj)
-
+	rm -rf sqz
