@@ -5,8 +5,7 @@
  * search. The array must be sorted. 
  */
 int bsearch(int x, int *v, int n)
-{
-    
+{    
     int low = 0, high = n - 1;
     int mid;
 
