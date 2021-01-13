@@ -1,13 +1,9 @@
-#include "any.h"
+#include "utils.h"
 
 /*
  * This function searches all characters of s2 for matching
  * with characters of s1. it is similat to library function 
  * strpbkr() (that returns a pointer to the position).
- *
- * input..: strings s1 and s2.
- * output.: position in s1 of first matching with caharcetr 
- * of s2.
  */
 int any(char *s1, char *s2)
 {

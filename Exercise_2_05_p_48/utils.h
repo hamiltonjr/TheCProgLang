@@ -11,4 +11,3 @@
 int any(char*, char*);
 
 #endif // ANY_H
-

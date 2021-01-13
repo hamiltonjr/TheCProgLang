@@ -1,12 +1,5 @@
-obj = main.o any.o
-cfg = -std=c11 -Wall -pedantic
-
-any: $(obj)
-	gcc $(cfg) -o any $(obj)
-
-$(obj): any.h
-	gcc $(cfg) -c $*.c
+any:
+	gcc -std=c11 -Wall -pedantic -o any main.c any.c
 
 clean:
-	rm -rf any $(obj)
-
+	rm -rf any
