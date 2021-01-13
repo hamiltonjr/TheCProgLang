@@ -4,14 +4,8 @@
 #define OUT    0
 
 /*
- * This code is a word counter. It counts also
- * characters and lines (is a bare wc).
- * For testing:             ./words < test.txt.
- * The test file reflects my opinion of how I'd
- * test this program.  The  values obtained are
- * syncornized with wc UNIX app.
+ * This program shows one words of text per line.
  */
-
 int main()
 {
     unsigned state = OUT; 
