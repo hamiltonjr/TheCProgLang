@@ -124,5 +124,6 @@ bool split(char*, char*, char*);
 int htoi(char*);
 void squeeze(char*, int);
 void strsqz(char*, char*);
+void lower(char*);
 
-#endif
+#endif // UTILS_H

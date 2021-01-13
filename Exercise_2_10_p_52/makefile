@@ -1,11 +1,5 @@
-obj = main.o lower.o tolower.o
-cfg = -std=c11 -Wall -pedantic
-
-lower: $(obj)
-	gcc $(cfg) -o lower $(obj)
-
-$(obj): lower.h
-	gcc $(cfg) -c $*.c
+lower:
+	gcc -std=c11 -Wall -pedantic -o lower main.c ../lib/utils.a
 
 clean:
-	rm -rf lower $(obj)
+	rm -rf lower
