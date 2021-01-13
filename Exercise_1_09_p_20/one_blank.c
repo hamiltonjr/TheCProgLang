@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+/**
+ * This program cuts trailing blanks in the input text.
+ */
 int main()
 {
     bool in_spaces = false;
