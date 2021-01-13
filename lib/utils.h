@@ -121,5 +121,6 @@ void copy(char*, const char*);
 int getline(char*, int);
 void reverse(char*);
 bool split(char*, char*, char*);
+int htoi(char*);
 
 #endif

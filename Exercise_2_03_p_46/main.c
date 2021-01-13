@@ -1,4 +1,6 @@
-#include "../include/utils.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "../lib/utils.h"
 
 /*
  * Testing htoi() function

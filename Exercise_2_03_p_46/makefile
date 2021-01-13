@@ -1,12 +1,5 @@
-obj = main.o htoi.o
-cfg = -std=c11 -Wall -pedantic
-
-htoi: $(obj)
-	gcc $(cfg) -o htoi $(obj)
-
-$(onj): htoi.h
-	gcc $(cfg) -c $*.c
+htoi:
+	gcc -std=c11 -Wall -pedantic -o htoi main.c ../lib/utils.a
 
 clean:
-	rm -rf htoi $(obj)
-
+	rm -rf htoi
