@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define IN     1
 #define OUT    0
 
@@ -13,7 +14,6 @@
 
 int main()
 {
-
     unsigned nl, nw, nc, state; // counters 
     int c;
 
@@ -47,7 +47,6 @@ int main()
     // output
     printf("\n\t%6d%8d%10d\n\n", nl, nw, nc);
 
-    return 0;
-
+    return EXIT_SUCCESS;
 }
 
