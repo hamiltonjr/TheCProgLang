@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #define LIMIT 1024
 
+/**
+ * This program implements a simple for-loop.
+ */
 int main()
 {
-
     register size_t i;
     int c;
 
@@ -21,8 +23,5 @@ int main()
     }
     printf("\n\n");
 
-
     return EXIT_SUCCESS;
-
 }
-
