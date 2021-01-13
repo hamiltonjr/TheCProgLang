@@ -1,8 +1,12 @@
-#include "trailing.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "../lib/utils.h"
+#define MAXLINE 1000
 
-// getline() used here is not default (from stabdard library)
-// but a similar in our utils.a library
-
+/** 
+ * getline() used here is not default (from stabdard library)
+ * but a similar in our utils.a library
+ */ 
 int main()
 {
     char line[MAXLINE], trailed[MAXLINE];
