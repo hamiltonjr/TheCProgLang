@@ -2,7 +2,9 @@
 #include <string.h>
 #define MAXLINE 1024
 
-// this function reverses a string
+/**
+ * This function implements a string reversion.
+ */
 void reverse(char *s)
 {
     size_t len = strlen(s);

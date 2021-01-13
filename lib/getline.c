@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * This function implements a line getting for C programs.
+ * The C programming language has not a sophisticated mode
+ * if data input. This function try enhance it with string 
+ * line input.
+ */
 int getline(char *line, int lim)
 {
     register size_t i;

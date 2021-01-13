@@ -44,6 +44,8 @@
 #include <stdarg.h>
 #include <stdbool.h>
 #include <stddef.h>
+#include <ctype.h>
+#include <string.h>
 
 /**
  * Our own type for (pointers to) strings.
@@ -107,5 +109,17 @@ long long get_long_long(const char *format, ...) __attribute__((format(printf, 1
  */
 string get_string(va_list *args, const char *format, ...) __attribute__((format(printf, 2, 3)));
 #define get_string(...) get_string(NULL, __VA_ARGS__)
+
+/**
+ * There are some functions to compound a library called
+ * utils.a, used in The C Programming Language exercises
+ * solving.
+ */
+double celsius_to_fahr(double);
+double fahr_to_celsius(double);
+void copy(char*, const char*);
+int getline(char*, int);
+void reverse(char*);
+bool split(char*, char*, char*);
 
 #endif

@@ -1,4 +1,4 @@
-#include "htoi.h"
+#include "../include/utils.h"
 
 /*
  * Testing htoi() function

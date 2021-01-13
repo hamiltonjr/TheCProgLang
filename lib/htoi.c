@@ -1,4 +1,4 @@
-#include "htoi.h"
+#include "../lib/utils.h"
 
 /*
  * This function converts a string of hexadecimal digits 

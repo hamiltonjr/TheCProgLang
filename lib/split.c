@@ -4,6 +4,9 @@
 #include <string.h>
 #define MAXLINE 1024
 
+/**
+ * This function implements a string splitting.
+ */
 bool split(char *s, char *t, char *delimiter)
 {
     char left[MAXLINE];
