@@ -1,8 +1,13 @@
-#include "longest.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "../lib/utils.h"
+#define MAXLINE 1024
 
+/**
+ * This program reads a text and shows the longest line.
+ */
 int main()
 {
-
     char line[MAXLINE];
     char longest[MAXLINE];
     int len = 0, max = 0;
@@ -20,10 +25,8 @@ int main()
     // output
     if (max > 0)
     {
-        printf("[%d] %s", max, longest);
+        printf("\n[%d] %s\n", max, longest);
     }
 
     return EXIT_SUCCESS;
-
 }
-
