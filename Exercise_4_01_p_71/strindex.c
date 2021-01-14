@@ -1,13 +1,9 @@
-#include "../pattern.h"
+#include "pattern.h"
 
 /*
  * This function return the first occurrence of a
  * pattern.
- *
- * input..: a string (line) and a pattern.
- * output.: index of occurrence.
  */
-
 int strindex(char *s, char *t)
 {
     register size_t i, j, k;

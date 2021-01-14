@@ -1,11 +1,8 @@
-#include "../pattern.h"
+#include "pattern.h"
 
 /*
  * This function return sthe rightmost occurrence of a
  * pattern.
- *
- * input..: a string (line) and a pattern.
- * output.: index of occurrence.
  *
  * OBS: this function is different of strindex() function
  * because the outer loop rnn until the end for find the
@@ -13,7 +10,6 @@
  */
 int strrindex(char *s, char *t)
 {
-
     register size_t i, j, k;
     int index = -1;
 
@@ -40,6 +36,4 @@ int strrindex(char *s, char *t)
     {
         return -1;
     }
-
 }
-
