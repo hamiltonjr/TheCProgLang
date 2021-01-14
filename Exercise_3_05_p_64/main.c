@@ -1,11 +1,12 @@
-#include "itob.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "../lib/utils.h"
 
 /*
  * Testing itob() function.
  */
 int main()
 {
-
     int n = 160;
     char s[10];
 
@@ -20,6 +21,4 @@ int main()
     printf("\tBase 16...........: %s\n\n", s);
 
     return EXIT_SUCCESS;
-
 }
-

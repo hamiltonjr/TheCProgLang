@@ -1,15 +1,11 @@
-#include "itob.h"
+#include "../lib/utils.h"
 
 /*
  * This function converts an integer number for it string
  * representation in a given numerical base.
- *
- * input..: integer number n, string s (for output) and base b.
- * output.: string representation s.
  */
 void itob(int n, char *s, int b)
 {
-
     // digits of a base (index is the base)
     // It is limited between 2 and 16
     static char digits[16] = 

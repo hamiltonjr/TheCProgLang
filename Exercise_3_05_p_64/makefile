@@ -1,12 +1,5 @@
-obj = main.o itob.o reverse.o
-cfg = -std=c11 -Wall -pedantic
-
-itob: $(obj)
-	gcc $(cfg) -o itob $(obj)
-
-$(obj): itob.h
-	gcc $(cfg) -c $*.c
+itob:
+	gcc -std=c11 -Wall -pedantic -o itob main.c ../lib/utils.a
 
 clean:
-	rm -rf itob $(obj)
-
+	rm -rf itob
