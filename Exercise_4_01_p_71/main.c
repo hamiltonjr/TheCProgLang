@@ -1,4 +1,7 @@
-#include "pattern.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "../lib/utils.h"
+#define MAXLINE 1024
 
 /*
  * Testing strindex() and strrindex() function.

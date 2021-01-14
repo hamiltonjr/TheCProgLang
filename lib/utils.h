@@ -127,5 +127,8 @@ void strsqz(char*, char*);
 void lower(char*);
 void itoa(int, char*);
 void itob(int, char*, int);
+int strindex(char*, char*);
+int strrindex(char*, char*);
+
 
 #endif // UTILS_H

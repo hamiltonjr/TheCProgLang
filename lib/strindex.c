@@ -1,4 +1,4 @@
-#include "pattern.h"
+#include "../lib/utils.h"
 
 /*
  * This function return the first occurrence of a
