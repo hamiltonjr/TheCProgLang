@@ -1,17 +1,15 @@
-#include "atof.h"
+#include "../lib/utils.h"
+#include <string.h>
+#include <ctype.h>
+#define MAXLINE 100 
+#define BASE     10
 
 /*
  * This function implements conversion from string to float.
- *
- * input..: a string with a floatting-point number representa-
- * tion.
- * output.: a floatting-point number.
- *
  * OBS: this version handle scientific notation.
  */ 
-double atof(char *s)
+double atofc(char *s)
 {
-
     double val, power;
     register size_t i;
     int sign, psign, expn;
@@ -73,6 +71,4 @@ double atof(char *s)
     }
 
     return sign * val / power;
-
 }
-

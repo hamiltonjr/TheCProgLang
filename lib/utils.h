@@ -129,6 +129,7 @@ void itoa(int, char*);
 void itob(int, char*, int);
 int strindex(char*, char*);
 int strrindex(char*, char*);
+double atofc(char*);
 
 
 #endif // UTILS_H
