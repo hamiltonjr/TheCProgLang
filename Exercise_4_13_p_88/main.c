@@ -1,4 +1,8 @@
-#include "reverse.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+// prototype
+void reverse(char*);
 
 int main()
 {

@@ -1,14 +1,9 @@
-#include "reverse.h"
+#include <string.h>
 
 /*
  * This function reverses a string.
- *
- * input..: a string to be reversed.
- * output.: in the same string, the reverse changes 
- * its content.
  * OBS: recursive version.
  */
-
 void reverse(char *s)
 {    
     size_t len = strlen(s);
