@@ -3,8 +3,6 @@
 /*
  * This function implements a floatting-point numbers input.
  * It is similar to getint() already implemented.
- *
- * input/output: double value pd.
  */
 double getfloat(double *pd)
 {
