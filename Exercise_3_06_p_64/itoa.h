@@ -10,7 +10,8 @@
  */
 
 // prototype
-void itoa(int, char*, int);
-void reverse(char*);
+#undef itoa
+#define itoa ITOA
+void ITOA(int, char*, int);
 
 #endif // ITOA_H

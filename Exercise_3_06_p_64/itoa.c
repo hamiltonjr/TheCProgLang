@@ -1,16 +1,12 @@
+#include "../lib/utils.h"
 #include "itoa.h"
 
 /*
  * This function is a special case of itoa that adjust
  * width as a given value w.
- *
- * input..: integer number n to be converted and width w.
- * output.: string representation of n.
  */
-
 void itoa(int n, char *s, int w)
 {
-
     int i = 0, sign;
 
     // manage signal
