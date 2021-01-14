@@ -1,4 +1,6 @@
-#include "itoa.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "../lib/utils.h"
 
 /*
  * Testing itoa() function in a special case.

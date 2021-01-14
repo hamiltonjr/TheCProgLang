@@ -125,5 +125,6 @@ int htoi(char*);
 void squeeze(char*, int);
 void strsqz(char*, char*);
 void lower(char*);
+void itoa(int, char*);
 
 #endif // UTILS_H

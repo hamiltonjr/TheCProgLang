@@ -1,11 +1,9 @@
-#include "itoa.h"
+#include "../lib/utils.h"
+#define BASE 10
 
 /*
  * This function converts an integer number for its string
  * representation. 
- *
- * input..: an integer number n. 
- * output.: a string with number representation.
  *
  * ONS: the maximum negative integer is known as INT_MAX
  * is built base in the INT_MAX:
