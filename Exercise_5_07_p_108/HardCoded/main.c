@@ -1,6 +1,7 @@
 #include "utils.h"
 #include <time.h>
 
+// buffer
 char lineptr[MAXLINES][MAXLEN];
 
 /*
@@ -9,14 +10,13 @@ char lineptr[MAXLINES][MAXLEN];
  */
 int main()
 {
-
     int nlines;
 
     clock_t b = clock();
-    if ((nlines = readlines(lineptr, MAXLINES)) >= 0)
+    if ((nlines = readLines(lineptr, MAXLINES)) >= 0)
     {
-        qsort(lineptr, 0, nlines - 1);
-        writelines(lineptr, nlines);
+        quickSort(lineptr, 0, nlines - 1);
+        writeLines(lineptr, nlines);
     } else
     {
         printf("ERROR: input too big to sort!\n");
@@ -28,4 +28,3 @@ int main()
 
     return EXIT_SUCCESS;
 }
-

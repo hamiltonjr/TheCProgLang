@@ -1,5 +1,15 @@
-#include "utils.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
+#define MAXLINES 5000
+
+// buffer
+char *lineptr[MAXLINES];
+
+// prototypes
+void quickSort(char *lineptr[], int, int);
+int readLines(char *lineptr[], int);
+void writeLines(char *lineptr[], int);
 
 /*
  * This is the main function. It is defined here a buffer p
@@ -7,14 +17,13 @@
  */
 int main()
 {
-
     int nlines;
 
     clock_t b = clock();
-    if ((nlines = readlines(lineptr, MAXLINES)) >= 0)
+    if ((nlines = readLines(lineptr, MAXLINES)) >= 0)
     {
-        qsort(lineptr, 0, nlines - 1);
-        writelines(lineptr, nlines);
+        quickSort(lineptr, 0, nlines - 1);
+        writeLines(lineptr, nlines);
     } else
     {
         printf("ERROR: input too big to sort!\n");
@@ -26,4 +35,3 @@ int main()
 
     return EXIT_SUCCESS;
 }
-

@@ -1,12 +1,11 @@
 #include "utils.h"
 
-int readlines(char lineptr[MAXLINES][MAXLEN], int maxlines)
+int readLines(char lineptr[][MAXLEN], int maxlines)
 {
-
     int len, nlines = 0;
     char line[MAXLEN];
 
-    while ((len = getline(line, MAXLEN)) > 0)
+    while ((len = getLine(line, MAXLEN)) > 0)
     {
         if (nlines >= maxlines)
         {
@@ -19,6 +18,4 @@ int readlines(char lineptr[MAXLINES][MAXLEN], int maxlines)
     }
 
     return nlines;
-
 }
-

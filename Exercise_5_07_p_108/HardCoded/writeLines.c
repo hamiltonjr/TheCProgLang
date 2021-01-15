@@ -1,13 +1,13 @@
 #include "utils.h"
 
-void writelines(char **lineptr, int nlines)
+/**
+ * 
+ */
+void writeLines(char lineptr[][MAXLEN], int nlines)
 {
-
     while (nlines-- > 0)
     {
         printf("%s\n", *lineptr++);
     }
     printf("\n");
-
 }
-

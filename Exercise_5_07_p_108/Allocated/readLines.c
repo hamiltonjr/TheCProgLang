@@ -1,12 +1,17 @@
-#include "utils.h"
+#include <stdio.h>
+#include <string.h>
+#define MAXLEN     1000
 
-int readlines(char **lineptr, int maxlines)
+// prototype(s)
+int getLine(char*, int);
+char* alloc(int);
+
+int readLines(char *lineptr[], int maxlines)
 {
-
     int len, nlines = 0;
     char *p, line[MAXLEN];
 
-    while ((len = getline(line, MAXLEN)) > 0)
+    while ((len = getLine(line, MAXLEN)) > 0)
     {
         if (nlines >= maxlines || (p = alloc(len)) == NULL)
         {
@@ -20,6 +25,4 @@ int readlines(char **lineptr, int maxlines)
     }
 
     return nlines;
-
 }
-

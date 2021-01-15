@@ -22,4 +22,3 @@ elements. Time is measured in milisseconds.
     Mean    0.916           0.806
 
 The mean also points for a faster running without allocation.
-

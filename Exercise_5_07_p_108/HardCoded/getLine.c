@@ -1,11 +1,9 @@
-#include "utils.h"
-
+#include <stdio.h>
 /*
  * This is a function that get a line text from stdin.
  */
-int getline(char *s, int lim)
+int getLine(char *s, int lim)
 {
-
     char *p;
     int c;
 
@@ -23,4 +21,3 @@ int getline(char *s, int lim)
  
     return (int)(p - s);
 }
-
