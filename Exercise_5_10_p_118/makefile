@@ -1,4 +1,4 @@
-OBJECTS  = main.o atof.o stack.o 
+OBJECTS  = main.o a2f.o stack.o 
 CFLAGS   = -std=c11 -Wall -pedantic
 COMPILER = gcc
 SOFTWARE = expr

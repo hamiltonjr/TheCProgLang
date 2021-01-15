@@ -8,9 +8,7 @@
 #define BASE 10
 
 // prototype(s)
-#undef atof
-#define atof my_atof
-double my_atof(char*);
+double a2f(char*);
 void show_stack(void);
 
 void push(double);
