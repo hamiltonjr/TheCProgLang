@@ -23,8 +23,8 @@ char* alloc(int);
 int getline(char*, int);
 
 #undef readlines
-#define readlines my_readlines
-int my_readlines(char**, int);
+#define readlines readlines
+int readlines(char**, int);
 
 #undef atoi
 #define atoi my_atoi
