@@ -11,7 +11,7 @@ int main()
 
     // catching lines and searching longest
     printf("\n");
-    while ((len = getline(line, MAXLINE)) > 0)
+    while ((len = getLine(line, MAXLINE)) > 0)
     { 
         if (len > MAX)
         {
