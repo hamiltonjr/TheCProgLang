@@ -1,8 +1,0 @@
-Exercise 1-24. Write a program to check a C program for rudimentary syntax
-errors like unbalanced parentheses, brackets and braces. Don't forget about
-quotes, both single and double, escape sequences, and comments. (This pro-
-gram is hard if you do it in full generality.)
-
-It is interesting to complete Exercise 1.23 before take it. A tip is use a 
-stack to save parenthesis, brackets, quotes, etc, to verify it is balanced 
-(it is balanced if it opens and closes, each stored in stack).
