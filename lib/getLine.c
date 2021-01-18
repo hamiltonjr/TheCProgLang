@@ -6,7 +6,7 @@
  * if data input. This function try enhance it with string 
  * line input.
  */
-int getline(char *line, int lim)
+int getLine(char *line, int lim)
 {
     register size_t i;
     int c = 0;

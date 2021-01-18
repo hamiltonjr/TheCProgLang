@@ -118,7 +118,6 @@ string get_string(va_list *args, const char *format, ...) __attribute__((format(
 double celsius_to_fahr(double);
 double fahr_to_celsius(double);
 void copy(char*, const char*);
-int getline(char*, int);
 void reverse(char*);
 bool split(char*, char*, char*);
 int htoi(char*);
@@ -130,6 +129,7 @@ void itob(int, char*, int);
 int strindex(char*, char*);
 int strrindex(char*, char*);
 double atofc(char*);
+int getLine(char*, int);
 
 
 #endif // UTILS_H
