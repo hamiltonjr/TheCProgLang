@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "../lib/utils.h"
 #define MAXLINE 1024
 
@@ -13,12 +14,12 @@ int main()
     int len = 0, max = 0;
 
     // catching lines and searching longest
-    while ((len = getline(line, MAXLINE)) > 0)
+    while ((len = getLine(line, MAXLINE)) > 0)
     {
         if (len > max)
         {
             max = len;
-            copy(longest, line);
+            strcpy(longest, line);
         }
     }
 
