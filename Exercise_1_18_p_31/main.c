@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../lib/utils.h"
-#define MAXLINE 1000
+#define MAXLINE 1024
 
 /** 
  * getline() used here is not default (from stabdard library)
@@ -14,7 +14,7 @@ int main()
 
     // catching lines 
     printf("\n");
-    while (getline(line, MAXLINE))
+    while (getLine(line, MAXLINE))
     {
         int i = 0, j = 0;
         int len = strlen(line);
