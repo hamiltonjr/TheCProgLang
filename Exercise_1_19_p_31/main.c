@@ -11,7 +11,7 @@ int main()
     char line[MAXLINE];
 
     // catching lines
-    while (getline(line, MAXLINE))
+    while (getLine(line, MAXLINE))
     {
         reverse(line);
         printf("\t%s", line);
