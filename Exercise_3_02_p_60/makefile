@@ -1,12 +1,5 @@
-obj = main.o escape.o unescape.o
-cfg = -std=c11 -Wall -pedantic
-
-vis: $(obj)
-	gcc $(cfg) -o vis $(obj)
-
-$(obj): visible.h
-	gcc $(cfg) -c $*.c
+vis:
+	gcc -std=c11 -Wall -pedantic -o vis main.c escape.c unescape.c
 
 clean:
-	rm -rf vis $(obj)
-
+	rm vis

@@ -1,10 +1,15 @@
-#include "visible.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #define MAXLEN 100
+
+// prototypes
+void escape(char*, char*);
+void unescape(char*, char*);
 
 /*
  * Testing escape() and unescape().
  */
-
 int main()
 {
     char t[MAXLEN], s[MAXLEN], r[MAXLEN];

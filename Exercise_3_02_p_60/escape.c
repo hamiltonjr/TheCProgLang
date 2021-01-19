@@ -1,13 +1,7 @@
-#include "visible.h"
-
 /*
  * This function converts escape sequences to visible
  * representatiohns of it.
- *
- * input..: a string t with text to be converted.
- * output.: a string with text converted.
  */
-
 void escape(char *s, char *t)
 {
     for ( ; *t != '\0'; t++)
