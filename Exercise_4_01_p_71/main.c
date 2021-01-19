@@ -16,9 +16,10 @@ int main()
     int pos = 0;
 
     /* leftmost */
-    while (getline(line, MAXLINE) > 0)
+    printf("\n");
+    while (getLine(line, MAXLINE) > 0)
     {
-        if ((pos = strindex(line, pattern)) >= 0)
+        if ((pos = strIndex(line, pattern)) >= 0)
         {
             printf("%d: %s", pos, line);
             found++;
@@ -26,14 +27,15 @@ int main()
     }
 
     /* rightmost
-    while (getline(line, MAXLINE) > 0)
+    while (getLine(line, MAXLINE) > 0)
     {
-        if ((pos = strrindex(line, pattern)) >= 0)
+        if ((pos = strrIndex(line, pattern)) >= 0)
         {
             printf("%d: %s", pos, line);
             found++;
         }
     }*/
+    printf("\n");
 
     return found;
 }
