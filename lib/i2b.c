@@ -4,7 +4,7 @@
  * This function converts an integer number for it string
  * representation in a given numerical base.
  */
-void itob(int n, char *s, int b)
+void i2b(int n, char *s, int b)
 {
     // digits of a base (index is the base)
     // It is limited between 2 and 16
