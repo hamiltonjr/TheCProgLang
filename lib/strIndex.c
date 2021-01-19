@@ -4,7 +4,7 @@
  * This function return the first occurrence of a
  * pattern.
  */
-int strindex(char *s, char *t)
+int strIndex(char *s, char *t)
 {
     register size_t i, j, k;
 

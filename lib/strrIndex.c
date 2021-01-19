@@ -8,7 +8,7 @@
  * because the outer loop rnn until the end for find the
  * rightmost occurrence of pattern.
  */
-int strrindex(char *s, char *t)
+int strrYndex(char *s, char *t)
 {
     register size_t i, j, k;
     int index = -1;
