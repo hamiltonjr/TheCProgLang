@@ -10,7 +10,7 @@ int main()
     char s[] = "abracadabra";
  
     printf("\n\tThe word %s without the letters 'a' and 'r' are ", s);
-    strsqz(s, "ar");
+    strSqz(s, "ar");
     printf("%s\n\n", s);
 
     return EXIT_SUCCESS;

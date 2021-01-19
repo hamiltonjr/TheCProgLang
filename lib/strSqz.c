@@ -4,7 +4,7 @@
  * This function uses squeeze() function to cut
  * each character in s2 from s1.
  */
-void strsqz(char *s1, char *s2)
+void strSqz(char *s1, char *s2)
 {
     size_t len = strlen(s2);
     register size_t i;
