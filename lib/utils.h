@@ -117,18 +117,17 @@ string get_string(va_list *args, const char *format, ...) __attribute__((format(
  */
 double celsius_to_fahr(double);
 double fahr_to_celsius(double);
-void copy(char*, const char*);
 void reverse(char*);
 bool split(char*, char*, char*);
-int htoi(char*);
+int h2i(char*);
 void squeeze(char*, int);
-void strsqz(char*, char*);
+void strSqz(char*, char*);
 void lower(char*);
-void itoa(int, char*);
-void itob(int, char*, int);
-int strindex(char*, char*);
-int strrindex(char*, char*);
-double atofc(char*);
+void i2a(int, char*);
+void i2b(int, char*, int);
+int strIndex(char*, char*);
+int strrIndex(char*, char*);
+double a2fc(char*);
 int getLine(char*, int);
 
 

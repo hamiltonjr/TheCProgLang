@@ -1,14 +1,13 @@
 #include "../lib/utils.h"
+#define IBASE 10
+#define OBASE 16
 
 /*
  * This function converts a string of hexadecimal digits 
  * (including an optional 0x or 0X) into its equivalent 
  * integer value.
- *
- * input..: string of hexadecimal digits.
- * output.: decimal integer value.
  */
-int htoi(char *s)
+int h2i(char *s)
 {
     register size_t i = 0;
     int n = 0, value = 0;
