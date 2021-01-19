@@ -1,11 +1,12 @@
 #include "../lib/utils.h"
-#include "itoa.h"
+#include <string.h>
+#define BASE 10
 
 /*
  * This function is a special case of itoa that adjust
  * width as a given value w.
  */
-void itoa(int n, char *s, int w)
+void i2aw(int n, char *s, int w)
 {
     int i = 0, sign;
 

@@ -1,12 +1,5 @@
-obj = main.o itoa.o
-cfg = -std=c11 -Wall -pedantic
-lib = ../lib/utils.a
-
-itoa: $(obj)
-	gcc $(cfg) -o itoa $(obj) $(lib)
-
-$(obj): itoa.h
-	gcc $(cfg) -c $*.c
+i2aw:
+	gcc -std=c11 -Wall -pedantic -o i2aw main.c i2aw.c ../lib/utils.a
 
 clean:
-	rm -rf itoa $(obj)
+	rm i2aw
