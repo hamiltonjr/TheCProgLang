@@ -1,5 +1,5 @@
 itoa:
-	gcc -std=c11 -Wall -pedantic -o itoa main.c ../lib/utils.a
+	gcc -std=c11 -Wall -pedantic -o i2a main.c ../lib/utils.a
 
 clean: 
-	rm -rf itoa
+	rm i2a

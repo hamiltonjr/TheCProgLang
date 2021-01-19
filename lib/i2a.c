@@ -25,8 +25,7 @@
  * ation is made from end to beginning, and it looks turn all
  * easy.
  */
-
-void itoa(int n, char *s)
+void i2a(int n, char *s)
 {
     int i = 0, sign;
     int shift;
