@@ -1,4 +1,4 @@
-obj = main.o getbits.o setbits.o binary.o
+obj = main.o getBits.o setBits.o binary.o
 cfg = -std=c11 -Wall
 
 bits: $(obj)
@@ -8,4 +8,4 @@ $(obj): bits.h
 	gcc $(cfg) -c $*.c
 
 clean:
-	rm -rf bits $(obj)
+	rm bits $(obj)

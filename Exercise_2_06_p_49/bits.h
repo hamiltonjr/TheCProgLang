@@ -8,8 +8,8 @@
  */
 
 // prototypes
-unsigned getbits(unsigned, int, int);
-unsigned setbits(unsigned, int, int, unsigned);
+unsigned getBits(unsigned, int, int);
+unsigned setBits(unsigned, int, int, unsigned);
 void binary(int);
 
 #endif // BITS_H
