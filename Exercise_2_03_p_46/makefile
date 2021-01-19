@@ -1,5 +1,5 @@
 htoi:
-	gcc -std=c11 -Wall -pedantic -o htoi main.c ../lib/utils.a
+	gcc -std=c11 -Wall -pedantic -o h2i main.c ../lib/utils.a
 
 clean:
-	rm -rf htoi
+	rm h2i
