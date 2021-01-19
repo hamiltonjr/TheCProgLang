@@ -1,4 +1,6 @@
-#include "expand.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 
 /*
  * This function expands sequences like:
@@ -10,11 +12,7 @@
  * Compound sequences like c-k2-7 are accepted.
  * Something like -a, c-, -a-b, -a-b-c, a-7 are
  * considered errors.
- *
- * input..: a string with sequence representation.
- * output.: a string with resulting sequence.
  */
-
 void expand(char *s1, char *s2)
 {
     enum status {
@@ -65,7 +63,7 @@ void expand(char *s1, char *s2)
             e = *s2;
         } else
         {
-            printf("ERROR: expected letters or digits and an hifen " 
+            fprintf(stderr, "ERROR: expected letters or digits and an hifen " 
                    "between it!\n");
             exit(EXIT_FAILURE);
         }
@@ -94,7 +92,7 @@ void expand(char *s1, char *s2)
 
     if (st != NOPER)
     {
-        printf("ERROR: something out of place!\n");
+        fprintf(stderr, "ERROR: something out of place!\n");
         exit(EXIT_FAILURE);
     }
 }

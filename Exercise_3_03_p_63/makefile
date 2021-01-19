@@ -1,12 +1,5 @@
-obj = main.o expand.o
-cfg = -std=c11 -Wall -pedantic
-
-xp: $(obj)
-	gcc $(cfg) -o xp $(obj)
-
-$(obj): expand.h
-	gcc $(cfg) -c $*.c
+xp:
+	gcc -std=c11 -Wall -pedantic -o xp main.c expand.c
 
 clean:
-	rm -rf xp $(obj)
-
+	rm xp
