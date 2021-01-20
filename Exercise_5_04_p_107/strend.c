@@ -1,4 +1,4 @@
-#include "strutil.h"
+#include <string.h>
 
 int strend(const char *s, const char *t)
 {

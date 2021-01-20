@@ -1,5 +1,9 @@
-#include "strutil.h"
+#include <stdio.h>
+#include <stdlib.h>
 #define MAXSTR 50
+
+// prototype
+int strend(const char*, const char*);
 
 int main()
 {
@@ -12,7 +16,6 @@ int main()
 
     printf("\t%s is in the end of %s?: %s\n\n", t2, s,
             (strend(s, t2) == 1) ? "yes" : "no");
-
 
     return EXIT_SUCCESS;
 }
