@@ -1,6 +1,7 @@
-#include "strutil.h"
-
-int strncmp(const char *s, const char *t, int n)
+/**
+ * 
+ */
+int strNCmp(const char *s, const char *t, int n)
 {
     for ( ; (*s == *t) && (--n > 0); s++, t++)
     {

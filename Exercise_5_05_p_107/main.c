@@ -1,5 +1,12 @@
-#include "strutil.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #define MAXSTR 50
+
+// prototypes
+void strNCat(char*, const char*, int);
+void strBCpy(char*, const char*, int);
+int strNCmp(const char*, const char*, int);
 
 int main()
 {

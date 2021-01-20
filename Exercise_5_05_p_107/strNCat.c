@@ -1,11 +1,9 @@
-#include "strutil.h"
-
 /*
  * This function concatenate the string t at the end
  * of the string s.
  */
 
-void strncat(char *s, const char *t, int n)
+void strNCat(char *s, const char *t, int n)
 {
     // go to the end of s
     for ( ; *s; s++);
