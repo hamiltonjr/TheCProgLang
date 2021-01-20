@@ -9,7 +9,7 @@
  *
  * OBS: this version handle scientific notation.
  */ 
-double atof(char *s)
+double a2f(char *s)
 {
 
     double val, power;

@@ -1,4 +1,4 @@
-obj = main.o getop.o stack.o getch.o atof.o
+obj = main.o getop.o stack.o getch.o a2f.o
 cfg = -std=c11 -Wall -pedantic
 
 calc: $(obj)
