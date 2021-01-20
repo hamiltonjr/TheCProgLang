@@ -15,10 +15,10 @@ int main()
 
     // input of string number representation
     printf("\n");
-    while (getline(line, MAXLINE) > 0)
+    while (getLine(line, MAXLINE) > 0)
     {
         // output floatting-point number summation
-        printf("\t%g\n", sum += atofc(line));
+        printf("\t%g\n", sum += a2fc(line));
     }
     printf("\n");
 

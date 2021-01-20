@@ -8,7 +8,7 @@
  * This function implements conversion from string to float.
  * OBS: this version handle scientific notation.
  */ 
-double atofc(char *s)
+double a2fc(char *s)
 {
     double val, power;
     register size_t i;
