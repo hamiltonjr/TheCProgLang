@@ -1,4 +1,8 @@
-#include "itoa.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+// prototype
+void i2a(char*, int);
 
 int main()
 {
@@ -7,7 +11,7 @@ int main()
 
     printf("\n\tPrinting n (number)...: %d\n", n);
 
-    itoa_(s, n);
+    i2a(s, n);
     printf("\tPrinting s (string)...: %s\n\n", s);
 
     return EXIT_SUCCESS;
