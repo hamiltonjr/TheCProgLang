@@ -5,7 +5,7 @@
  * some types of data in some different modes: numerical
  * and lexicograpical.
  */
-void qsort(void **v, int left, int right, int (*comp)(void*, void*))
+void qSort(void **v, int left, int right, int (*comp)(void*, void*))
 {
     void swap(void **v, int, int);
     int i, last;
@@ -27,8 +27,8 @@ void qsort(void **v, int left, int right, int (*comp)(void*, void*))
     }
 
     swap(v, left, last);
-    qsort(v, left, last - 1, comp);
-    qsort(v, last + 1, right, comp);
+    qSort(v, left, last - 1, comp);
+    qSort(v, last + 1, right, comp);
 }
 
 /*

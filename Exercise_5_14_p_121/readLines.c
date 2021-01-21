@@ -4,12 +4,12 @@
  * This function read lines of stdin using getline()
  * function.
  */
-int readlines(char **lineptr, int maxlines)
+int readLines(char **lineptr, int maxlines)
 {
     int len, nlines = 0;
     char *p, line[MAXLEN];
 
-    while ((len = getline(line, MAXLEN)) > 0)
+    while ((len = getLine(line, MAXLEN)) > 0)
     {
         if (nlines >= maxlines || (p = alloc(len)) == NULL)
         {

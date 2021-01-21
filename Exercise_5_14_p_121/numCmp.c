@@ -5,7 +5,7 @@
  * quicksort algorithm. It consider reversed
  * case too.
  */
-int numcmp(char *s1, char *s2)
+int numCmp(char *s1, char *s2)
 {
     double v1 = atof(s1);
     double v2 = atof(s2);

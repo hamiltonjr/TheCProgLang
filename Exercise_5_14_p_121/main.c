@@ -30,11 +30,11 @@ int main(int argc, char *const *argv)
 
     // read lines and apply quicksort algorithm using 
     // adequate comparison function.
-    if ((nlines = readlines(lineptr, MAXLINES)) >= 0)
+    if ((nlines = readLines(lineptr, MAXLINES)) >= 0)
     {
-        qsort((void**)lineptr, 0, nlines - 1, 
-            (int (*)(void*, void*))(numeric ? numcmp : compare));
-        writelines(lineptr, nlines);
+        qSort((void**)lineptr, 0, nlines - 1, 
+            (int (*)(void*, void*))(numeric ? numCmp : compare));
+        writeLines(lineptr, nlines);
         printf("\n");
         return EXIT_SUCCESS;
     } else

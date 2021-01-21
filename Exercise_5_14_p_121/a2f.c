@@ -4,7 +4,7 @@
  * This function implements conversion from string to float.
  * OBS: this version handle scientific notation.
  */ 
-double atof(const char *s)
+double a2f(const char *s)
 {
     double val, power;
     register size_t i;
