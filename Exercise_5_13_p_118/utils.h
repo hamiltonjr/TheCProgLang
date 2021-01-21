@@ -15,19 +15,10 @@
 char *lineptr[MAXLINES];
 
 // prototype(s)
-void writelines(char**, int);
 char* alloc(int);
-
-#undef getline
-#define getLine getline
-int getline(char*, int);
-
-#undef readlines
-#define readlines readlines
-int readlines(char**, int);
-
-#undef atoi
-#define atoi my_atoi
-int my_atoi(char*);
+int getLine(char*, int);
+int readLines(char**, int);
+void writeLines(char**, int);
+int a2i(char*);
 
 #endif // UTILS_H

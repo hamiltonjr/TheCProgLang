@@ -4,7 +4,7 @@
  * This function write lines stored in a variable-length
  * array (an array of pointers) at stdout.
  */
-void writelines(char **lineptr, int nlines)
+void writeLines(char **lineptr, int nlines)
 {
     while (nlines-- > 0)
     {

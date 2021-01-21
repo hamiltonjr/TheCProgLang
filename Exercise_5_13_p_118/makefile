@@ -1,4 +1,4 @@
-OBJECTS  = main.o readlines.o writelines.o alloc.o atoi.o
+OBJECTS  = main.o readLines.o writeLines.o alloc.o a2i.o
 CFLAGS   = -std=c11 -Wall -pedantic
 COMPILER = gcc
 SOFTWARE = tail

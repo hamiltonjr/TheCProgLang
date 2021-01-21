@@ -5,7 +5,7 @@
  * This function converts string representation of a integer
  * number to a integer number.
  */
-int atoi(char *s)
+int a2i(char *s)
 {
 
     int n, sign;

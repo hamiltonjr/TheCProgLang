@@ -10,13 +10,13 @@
 int main(int argc, char **argv)
 {
     // read entire text file
-    int nlines = readlines(lineptr, MAXLINES);
+    int nlines = readLines(lineptr, MAXLINES);
 
     // no option used
     if (argc == 1)
     {
         int tail = nlines - DEFAULT;
-        writelines(lineptr + tail, DEFAULT);
+        writeLines(lineptr + tail, DEFAULT);
     } else
     // option used
     if (argc == 2)
@@ -24,7 +24,7 @@ int main(int argc, char **argv)
         // begin with '-'
         if (argv[1][0] == '-')
         {
-            int value = (-1) * atoi(argv[1]);
+            int value = (-1) * a2i(argv[1]);
             
             // invalid option format
             if (value == 0)
@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 
             // show lines with option
             int tail = nlines - value;
-            writelines(lineptr + tail, value);
+            writeLines(lineptr + tail, value);
         } else
         {
             // error in option used format
