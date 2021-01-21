@@ -19,7 +19,7 @@ void writelines(char**, int);
 char* alloc(int);
 
 #undef getline
-#define getline getline
+#define getLine getline
 int getline(char*, int);
 
 #undef readlines
